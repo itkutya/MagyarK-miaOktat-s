@@ -1,0 +1,34 @@
+.main {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1%;
+}
+
+.main p,
+.main h1 {
+    color: white;
+}
+
+.main .fogalmak {
+    color: white;
+}
+
+.main table {
+    text-align: center;
+    color: white;
+}
+
+.main table, .main tr, .main td, .main th {
+    border: 1px solid;
+    border-color: white;
+}
+
+.main img {
+    width: 25%;
+    margin: auto;
+}
+
+.main .signal {
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}

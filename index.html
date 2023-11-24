@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magyar Kémia Oktatás</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/dropdown.css">
+    <link rel="stylesheet" href="CSS/slideshow.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="background">
+        <div class="foreground">
+            <div class="header" onclick="location.href='https://www.elte.hu/'"></div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown_text" href="OtherPages/SubjectsPage/subject_pages.html">Témakörök</a>
+                        <div class="dropdown-content">
+                            <a href="OtherPages/SubjectsPage/atomszerkezet.html">Atomszerkezet</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown_text" href="OtherPages/TestPage/tests_pages.html">Feladatlapok</a>
+                        <div class="dropdown-content">
+                            <a href="OtherPages/TestPage/atomszerkezet.html">Atomszerkezet</a>
+                        </div>
+                    </li>
+                    <li><a href="OtherPages/AboutPage/about.html">Az oldalról</a></li>
+                    <li><a href="OtherPages/ExternalLinks/external_links.html">Hasznos linkek</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <h1>Üdvözöljük az oldalunkon!</h1>
+                <div class="slideshow_container">
+                    <div class="slide fade">
+                        <img src="Images/Books.jpg">
+                        <div class="text">
+                            Csatlakozz az elte csapatához, és tanulj az eltén!
+                            Végtelen móka és kacagás vár rád.
+                            Az egyetemünkön nem lesz unalmas pillanat az életedben.
+                            Tanulj tovább az ELTE egyetemein!
+                        </div>
+                        <div class="number">1 / 3</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="Images/library.jpg">
+                        <div class="text">
+                            A könyvtári feladatokat az egyetemen az Egyetemi Könyvtári Szolgálat tagkönyvtárai egymással
+                            együttműködve valósítják meg. Az együttműködés mellett minden könyvtár egyedi
+                            gyűjteményének, sajátos célcsoportjának megfelelően működik és nyújt szolgáltatásokat,
+                            melyről az egyes könyvtárak honlapján találnak részletes információkat.
+                            <a
+                                href="https://eltekonyvtarak.elte.hu/egyetemi-konyvtari-szolgalat/rolunk/kuldetes-es-jovokep">
+                                Az Egyetemi Könyvtári Szolgálatról
+                            </a>
+                        </div>
+                        <div class="number">2 / 3</div>
+                    </div>
+                    <div class="slide fade">
+                        <img src="Images/ELTE_LOGO.png" onclick="location.href='https://www.elte.hu/'">
+                        <div class="text">
+                            Tanulj online! Használd ki az internet adta lehetőségeket és készülj fel az éretségire a
+                            weben keresztül.
+                            Oldalunk különböző kémia éretségin is előforduló témát találhatsz.
+                            Ezeke diák barát módon íródtak, így megértésük egyszerű.
+                            Illetve találsz mellé a tudásodat ellenörző feladatokat is, ú
+                            ezek megoldásával elmélyítheted tudásodat és ellenőrízheted hogy eddig mit sikerült
+                            megtanulnod.
+                        </div>
+                        <div class="number">3 / 3</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <div class="nav_dots" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                <script src="JS/slideshow.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
